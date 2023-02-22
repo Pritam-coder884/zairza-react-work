@@ -45,6 +45,9 @@ const Navbar = () => {
             <li>
               <Link to="/about">About</Link>
             </li>
+            <li>
+              <Link to="/sign-up">Sign-Up</Link>
+            </li>
             <button className="white_btn" onClick={handleLogout}> Logout
             </button>
           </ul>
