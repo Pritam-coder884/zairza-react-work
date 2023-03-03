@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import "../../styles/navbar.css";
+import "../../styles/navbar.scss";
 
 const Navbar = () => {
   const handleLogout = () => {
@@ -11,35 +11,37 @@ const Navbar = () => {
   };
   const [isMobile, setIsMobile] = useState(false);
   // const [isSelectNavLink,setIsSelectNavLink]=useState(false);
-  const handleNavClick=()=>{
+  const handleNavClick = () => {
     setIsMobile(false);
-  }
+  };
   return (
     <div className="navbar-box">
       <nav className="navbar">
-        <div className="brand-name">
-         navlogo
-        </div>
-          <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
-          onClick={handleNavClick}>
-            <Link to="/" className="nav-links-item">
-               <li>HOME</li>
-            </Link>
-            <Link to="/about" className="nav-links-item">
-              <li>ABOUT US</li>
-            </Link>
-            <Link to="/sign-up" className="nav-links-item">
-              <li>SIGN UP</li>
-            </Link>
-            
-          <button className="white_btn" onClick={handleLogout}> Logout
-            </button>
-          </ul>
+        <div className="brand-name">navlogo</div>
+        <ul
+          className={isMobile ? "nav-links-mobile" : "nav-links"}
+          onClick={handleNavClick}
+        >
+          <Link to="/" className="nav-links-item">
+            <li>HOME</li>
+          </Link>
+          <Link to="/about" className="nav-links-item">
+            <li>ABOUT US</li>
+          </Link>
+          <Link to="/sign-up" className="nav-links-item">
+            <li>SIGN UP</li>
+          </Link>
+
+          <button className="white_btn" onClick={handleLogout}>
+            {" "}
+            Logout
+          </button>
+        </ul>
         <button
           className="mobile-menu-icon"
           onClick={() => setIsMobile(!isMobile)}
         >
-          {isMobile ? <CloseIcon /> : <MenuIcon/>}
+          {isMobile ? <CloseIcon /> : <MenuIcon />}
         </button>
       </nav>
     </div>
@@ -47,9 +49,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
-
-

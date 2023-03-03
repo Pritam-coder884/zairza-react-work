@@ -1,4 +1,4 @@
-import "../../styles/form-select.css"
+import "../../styles/form-select.scss"
 
 const SELECT_TYPE = {
     small: 'small',

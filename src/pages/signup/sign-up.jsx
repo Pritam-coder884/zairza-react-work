@@ -1,6 +1,6 @@
 import FormInput from "../../component/form/form-input";
 import FormSelect from "../../component/form/form-select";
-import '../../styles/sign-up.css'
+import '../../styles/sign-up.scss'
 import { useState } from "react";
 
 const formDefaultInput = {

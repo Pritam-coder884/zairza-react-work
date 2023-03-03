@@ -39,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-modal": "^3.16.1",
+    "sass": "^1.58.3"
   }
 }
