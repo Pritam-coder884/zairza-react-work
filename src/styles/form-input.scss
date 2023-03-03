@@ -1,0 +1,44 @@
+.form-input
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+        .form-label
+        {
+        margin-top: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: medium;
+        }
+        .input
+        {
+            position: relative;
+            display: flex;
+                .hidenseek
+                {
+                    position: absolute;
+                    left:15rem;
+                    top: .4rem;
+                    font-weight: 700;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    cursor: pointer;
+                }
+                .input-field
+                {
+                    width: 18rem;
+                    height: 1.8rem;
+                    /* border-style: none; */
+                    }
+        }
+        p{
+            padding:0;
+            margin:0;
+            font-size: small;
+            color: red;
+        }
+}
+
+
+
